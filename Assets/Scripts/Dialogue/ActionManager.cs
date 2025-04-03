@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class ActionManager : MonoBehaviour
+public class ActionManager : NetworkBehaviour
 {
     public GameObject ActionButtonPrefab;
     public Transform ButtonContainer;
     public AudioSource AudioSource;
     public Animator Animator;
     private ActionNode currentNode;
+
+    //public ActionTreeBuilder ActionTreeBuilder;
+
 
     public void Initialize(ActionNode rootNode)
     {
@@ -20,6 +24,7 @@ public class ActionManager : MonoBehaviour
 
     public void TraverseTo(ActionNode node)
     {
+        print("traversing");
         PlayAction(node);
         currentNode = node;
         UpdateUI();
@@ -36,10 +41,15 @@ public class ActionManager : MonoBehaviour
 
     private void PlayAction(ActionNode node)
     {
-        if (node.ActionAudio != null && AudioSource != null)
+        print(IsOwner);
+        if (!IsOwner) return;
+        print("playing action");
+        if (node.ClipId != -1 && AudioSource != null)
         {
-            AudioSource.clip = node.ActionAudio;
-            AudioSource.Play();
+            print("trying to play audio");
+            PlayAudioRpc(1);
+            //AudioSource.clip = ActionTreeBuilder.audioClips[node.ClipId];
+            //AudioSource.Play();
         }
 
         if (!string.IsNullOrEmpty(node.AnimationStateName) && Animator != null)
@@ -77,5 +87,13 @@ public class ActionManager : MonoBehaviour
             var backButton = backButtonObject.GetComponent<Button>();
             backButton.onClick.AddListener(TraverseBack);
         }
+    }
+
+    [Rpc(SendTo.Everyone)]
+    private void PlayAudioRpc(int clipId)
+    {
+        //AudioSource.clip = ActionTreeBuilder.audioClips[clipId];
+        //AudioSource.Play();
+        print("test");
     }
 }

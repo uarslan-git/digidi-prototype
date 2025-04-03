@@ -7,13 +7,13 @@ public class ActionNode
     public string ActionName { get; private set; }
     public List <ActionNode> Children { get; private set; }
     public ActionNode Parent { get; private set; }
-    public AudioClip ActionAudio { get; private set; }
+    public int ClipId { get; private set; }
     public string AnimationStateName { get; private set; }
 
-    public ActionNode(string actionName, AudioClip audio = null, string animationState = null)
+    public ActionNode(string actionName, int clipId = -1, string animationState = null)
     {
         ActionName = actionName;
-        ActionAudio = audio;
+        ClipId = clipId;
         AnimationStateName = animationState;
         Children = new List<ActionNode>();
     }

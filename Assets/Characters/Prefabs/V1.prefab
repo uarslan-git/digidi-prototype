@@ -276,12 +276,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b171003d884b73340b69fec5a895a827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Szene0Audio: {fileID: 8300000, guid: 2ecb4ccf8811e4843812b7e2ca73a27d, type: 3}
-  Szene3aAudio: {fileID: 8300000, guid: e1f49619811f15446baba7cbea2e25f5, type: 3}
-  Szene3bAudio: {fileID: 8300000, guid: 84d6594fd64d6dd468976b618ab24662, type: 3}
-  Szene3cdAudio: {fileID: 8300000, guid: 07489543bc1fb8545a7b6ec3b4931c5c, type: 3}
-  Szene3eAudio: {fileID: 8300000, guid: 3f17f7463786ba842a6f4bdf5124cfb1, type: 3}
-  Szene5Audio: {fileID: 8300000, guid: 3a840005f3fd46b4d932e9672e6e17ac, type: 3}
+  audioClips:
+  - {fileID: 8300000, guid: 2ecb4ccf8811e4843812b7e2ca73a27d, type: 3}
+  - {fileID: 8300000, guid: e1f49619811f15446baba7cbea2e25f5, type: 3}
+  - {fileID: 8300000, guid: 84d6594fd64d6dd468976b618ab24662, type: 3}
+  - {fileID: 8300000, guid: 07489543bc1fb8545a7b6ec3b4931c5c, type: 3}
+  - {fileID: 8300000, guid: 3f17f7463786ba842a6f4bdf5124cfb1, type: 3}
+  - {fileID: 8300000, guid: 3a840005f3fd46b4d932e9672e6e17ac, type: 3}
 --- !u!114 &346636079433384731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6667d2db0c592f84fb082d37859059a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   ActionButtonPrefab: {fileID: 4342614186307497714, guid: 30bd42085f057ce429bef54cb6c10b0c, type: 3}
   ButtonContainer: {fileID: 3779827914708779641}
   AudioSource: {fileID: 3174099458347862163}

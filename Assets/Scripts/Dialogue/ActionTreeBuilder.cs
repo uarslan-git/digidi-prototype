@@ -4,33 +4,28 @@ using UnityEngine;
 
 public class ActionTreeBuilder : MonoBehaviour
 {
-    public AudioClip Szene0Audio;
-    public AudioClip Szene3aAudio;
-    public AudioClip Szene3bAudio;
-    public AudioClip Szene3cdAudio;
-    public AudioClip Szene3eAudio;
-    public AudioClip Szene5Audio;
+    public List<AudioClip> audioClips;
 
     public ActionNode RootNode { get; private set; }
 
     void Awake()
     {
         RootNode = new ActionNode("Root");
-        var szene0Node = new ActionNode("Szene 0", Szene0Audio, "Szene0Trigger");
+        var szene0Node = new ActionNode("Szene 0", 0, "Szene0Trigger");
 
         RootNode.AddChild(szene0Node);
 
-        var szene3aNode = new ActionNode("Szene 3a", Szene3aAudio, "Szene3aTrigger");
-        var szene3bNode = new ActionNode("Szene 3b", Szene3bAudio, "Szene3bTrigger");
-        var szene3cdNode = new ActionNode("Szene 3c_d", Szene3cdAudio, "Szene3cdTrigger");
-        var szene3eNode = new ActionNode("Szene 3e", Szene3eAudio, "Szene3eTrigger");
+        var szene3aNode = new ActionNode("Szene 3a", 1, "Szene3aTrigger");
+        var szene3bNode = new ActionNode("Szene 3b", 2, "Szene3bTrigger");
+        var szene3cdNode = new ActionNode("Szene 3c_d", 3, "Szene3cdTrigger");
+        var szene3eNode = new ActionNode("Szene 3e", 4, "Szene3eTrigger");
 
         szene0Node.AddChild(szene3aNode);
         szene0Node.AddChild(szene3bNode);
         szene0Node.AddChild(szene3cdNode);
         szene0Node.AddChild(szene3eNode);
 
-        var szene5Node = new ActionNode("Szene 5", Szene5Audio, "Szene5Trigger");
+        var szene5Node = new ActionNode("Szene 5", 5, "Szene5Trigger");
 
         szene3aNode.AddChild(szene5Node);
         szene3bNode.AddChild(szene5Node);
