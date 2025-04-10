@@ -13,7 +13,7 @@ public class ActionManager : NetworkBehaviour
     public Animator Animator;
     private ActionNode currentNode;
 
-    //public ActionTreeBuilder ActionTreeBuilder;
+    public ActionTreeBuilder ActionTreeBuilder;
 
 
     public void Initialize(ActionNode rootNode)
@@ -41,13 +41,13 @@ public class ActionManager : NetworkBehaviour
 
     private void PlayAction(ActionNode node)
     {
-        print(IsOwner);
+        //print(IsOwner);
         if (!IsOwner) return;
-        print("playing action");
+        //print("playing action");
         if (node.ClipId != -1 && AudioSource != null)
         {
-            print("trying to play audio");
-            PlayAudioRpc(1);
+            //print("trying to play audio");
+            PlayAudioRpc(node.ClipId);
             //AudioSource.clip = ActionTreeBuilder.audioClips[node.ClipId];
             //AudioSource.Play();
         }
@@ -92,8 +92,8 @@ public class ActionManager : NetworkBehaviour
     [Rpc(SendTo.Everyone)]
     private void PlayAudioRpc(int clipId)
     {
-        //AudioSource.clip = ActionTreeBuilder.audioClips[clipId];
-        //AudioSource.Play();
-        print("test");
+        AudioSource.clip = ActionTreeBuilder.audioClips[clipId];
+        AudioSource.Play();
+        //print("test");
     }
 }

@@ -20,7 +20,7 @@ MonoBehaviour:
   postInstallShowPopupNotWindow: 0
   performPostInstallationCheck: 0
   updateAvailable: 0
-  lastUpdateCheck: 638780745871444073
+  lastUpdateCheck: 638798989862242873
   jsonTagName: 2.0.0
   jsonHtmlUrl: https://github.com/soupday/CCiC-Unity-Tools/releases/tag/2.0.0
   jsonPublishedAt: 2024-12-18T16:58:57Z
