@@ -65,7 +65,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: -0.0012158873, y: 0.04531465, z: 0.0119211795}
+    localPosition: {x: -0.0012158627, y: 0.045314606, z: 0.011921045}
     localRotation: {x: 0.00000003795138, y: -0.00000002841988, z: 0.000000037280458, w: 1}
     height: 0.09572017
     radius: 0.027483882
@@ -77,7 +77,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: 0.000015150288, y: 0.1102579, z: 0.00002408195}
+    localPosition: {x: 0.000015142838, y: 0.11025781, z: 0.000024104305}
     localRotation: {x: 0.00000006006665, y: -0.0000000609816, z: 0.00000003458762, w: 1}
     height: 0.29706103
     radius: 0.03316718
@@ -89,7 +89,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: -0.012569934, y: 0.10272108, z: -0.005589072}
+    localPosition: {x: -0.012569927, y: 0.102721095, z: -0.0055890535}
     localRotation: {x: 0.000000007450578, y: -0.00000009837091, z: 0.00000015574182, w: 1}
     height: 0.32234538
     radius: 0.04645426
@@ -101,8 +101,8 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: -0.0000017398653, y: 0.06610611, z: 0.0149305705}
-    localRotation: {x: -0.7073135, y: 0.00000025422844, z: 0.00000012598151, w: 0.70690006}
+    localPosition: {x: -0.0000017398607, y: 0.06610611, z: 0.0149305705}
+    localRotation: {x: -0.7073135, y: 0.0000002542327, z: 0.00000012598106, w: 0.70690006}
     height: 0.21020941
     radius: 0.068482175
     name: CC_Base_Head_Capsule
@@ -113,8 +113,8 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: 0.00000014185122, y: 0.01883875, z: 0.0000070314845}
-    localRotation: {x: -0.80131364, y: -0.00000062243834, z: 0.0000006675638, w: 0.5982444}
+    localPosition: {x: 0.0000001418594, y: 0.01883875, z: 0.0000070314845}
+    localRotation: {x: -0.80131364, y: -0.0000006224347, z: 0.00000066756223, w: 0.5982444}
     height: 0.1486919
     radius: 0.04808508
     name: CC_Base_NeckTwist01_Capsule
@@ -125,7 +125,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: -0.000025672916, y: -0.107991256, z: 0.028101869}
+    localPosition: {x: -0.000025672909, y: -0.107991256, z: 0.028101869}
     localRotation: {x: 0.000000029802308, y: -0.7071068, z: 0.000000044703462, w: 0.7071067}
     height: 0.38140172
     radius: 0.09848791
@@ -161,7 +161,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: 0.0014343475, y: 0.04546632, z: 0.0092569785}
+    localPosition: {x: 0.0014343475, y: 0.04546632, z: 0.009256993}
     localRotation: {x: -0.000000013504173, y: 0.00000016075495, z: 0.000000035956063, w: 1}
     height: 0.09573324
     radius: 0.0297759
@@ -173,7 +173,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: -0.000019616558, y: 0.11025391, z: 0.000026170159}
+    localPosition: {x: -0.00001961749, y: 0.11025394, z: 0.000026185062}
     localRotation: {x: 0.0000000018189887, y: 0.00000008330605, z: 0.00000014653716, w: 1}
     height: 0.29702893
     radius: 0.033129364
@@ -185,7 +185,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: 0.0125664035, y: 0.10279065, z: -0.005587531}
+    localPosition: {x: 0.0125664035, y: 0.10279067, z: -0.0055875215}
     localRotation: {x: 0.000000022351736, y: -0.00000006478511, z: -0.00000022212038, w: -1}
     height: 0.32248148
     radius: 0.046451855
@@ -197,7 +197,7 @@ MonoBehaviour:
     dynamicRef: {fileID: 0}
   - transform: {fileID: 0}
     isEnabled: 1
-    localPosition: {x: 0.0000021457718, y: 0.16866954, z: -0.0010844618}
+    localPosition: {x: 0.0000021457754, y: 0.16866952, z: -0.0010844544}
     localRotation: {x: -0.036970116, y: -0.7061397, z: 0.036970086, w: 0.7061396}
     height: 0.29701045
     radius: 0.11762815

@@ -215,8 +215,8 @@
                                 "Friction": 0.05000000074505806,
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
-                                    -0.0008512218482792378,
-                                    1.4373016357421876,
+                                    -0.0008512220229022205,
+                                    1.4373018741607667,
                                     121.22406005859375
                                 ],
                                 "WorldRotationQ": [
@@ -244,14 +244,14 @@
                                 "Friction": 0.05000000074505806,
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
-                                    -0.0003101298934780061,
+                                    -0.0003101302427239716,
                                     5.672805309295654,
                                     144.08457946777345
                                 ],
                                 "WorldRotationQ": [
                                     0.8013138175010681,
-                                    -6.224275352906261e-7,
-                                    6.675662689303863e-7,
+                                    -6.224309458957578e-7,
+                                    6.675697363789368e-7,
                                     0.598244309425354
                                 ],
                                 "WorldScale": [
@@ -270,7 +270,7 @@
                                 "Friction": 0.05000000074505806,
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
-                                    0.0022950423881411554,
+                                    0.0022950421553105118,
                                     6.583773612976074,
                                     131.12611389160157
                                 ],
@@ -351,14 +351,14 @@
                                 "Friction": 0.05000000074505806,
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
-                                    -0.00019966195395682007,
+                                    -0.0001996623759623617,
                                     2.7060179710388185,
                                     155.5015869140625
                                 ],
                                 "WorldRotationQ": [
                                     0.7073135375976563,
-                                    2.542388983783894e-7,
-                                    1.2598546561548574e-7,
+                                    2.5423548777325779e-7,
+                                    1.259889756966004e-7,
                                     0.7069000005722046
                                 ],
                                 "WorldScale": [
@@ -418,8 +418,8 @@
                                 "Friction": 0.05000000074505806,
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
-                                    52.286773681640628,
-                                    7.589414119720459,
+                                    52.286766052246097,
+                                    7.589414596557617,
                                     136.99957275390626
                                 ],
                                 "WorldRotationQ": [
@@ -450,7 +450,7 @@
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
                                     68.85786437988281,
-                                    6.45621395111084,
+                                    6.456214427947998,
                                     137.0459747314453
                                 ],
                                 "WorldRotationQ": [
@@ -502,8 +502,8 @@
                                 "Friction": 0.05000000074505806,
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
-                                    -24.998432159423829,
-                                    8.020047187805176,
+                                    -24.99843406677246,
+                                    8.020048141479493,
                                     135.77032470703126
                                 ],
                                 "WorldRotationQ": [
@@ -531,7 +531,7 @@
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
                                     -52.28683090209961,
-                                    7.592984199523926,
+                                    7.592985153198242,
                                     136.99940490722657
                                 ],
                                 "WorldRotationQ": [
@@ -562,7 +562,7 @@
                                 "Elasticity": 0.5,
                                 "WorldTranslate": [
                                     -68.87390899658203,
-                                    6.727427959442139,
+                                    6.727428913116455,
                                     137.02415466308595
                                 ],
                                 "WorldRotationQ": [
@@ -700,7 +700,7 @@
                                             "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Tongue/Std_Tongue_MicroN.png"
                                         },
                                         "Gradient AO": {
-                                            "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Tongue/Std_Tongue_GradAO.jpg"
+                                            "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg"
                                         }
                                     },
                                     "Variable": {
@@ -1824,7 +1824,7 @@
                                             "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_MicroN.png"
                                         },
                                         "Gradient AO": {
-                                            "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Tongue/Std_Tongue_GradAO.jpg"
+                                            "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg"
                                         },
                                         "Gums Mask": {
                                             "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_GumsMask.jpg"
@@ -1966,7 +1966,7 @@
                                             "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_MicroN.png"
                                         },
                                         "Gradient AO": {
-                                            "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Tongue/Std_Tongue_GradAO.jpg"
+                                            "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg"
                                         },
                                         "Gums Mask": {
                                             "Texture Path": "./textures/V2/V2/CC_Base_Body/Std_Lower_Teeth/Std_Lower_Teeth_GumsMask.jpg"

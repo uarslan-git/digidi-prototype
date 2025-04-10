@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradientAOMap:
-        m_Texture: {fileID: 2800000, guid: f7fdf379cb9ce3744af54f3bd9d661e2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 295d231c87143ce4b9f81521bde03622, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GumsMaskMap:
