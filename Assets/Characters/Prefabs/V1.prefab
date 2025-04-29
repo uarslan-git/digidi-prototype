@@ -753,14 +753,17 @@ PrefabInstance:
       addedObject: {fileID: 9219175632914188010}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7097463259408091744}
+      addedObject: {fileID: 2022042725614922330}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2022042725614922330}
+      addedObject: {fileID: 7097463259408091744}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3687394452715416471}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8734124903862219748}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7947507000291783009}
@@ -770,9 +773,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8879105722122918410}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8734124903862219748}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3174099458347862163}
@@ -855,6 +855,63 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &8734124903862219748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6392133420162213027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  TransitionStateInfoList:
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: -98237950
+    TransitionDuration: 0.25
+    TriggerNameHash: 1080493112
+    TransitionIndex: 0
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: 762227118
+    TransitionDuration: 0.25
+    TriggerNameHash: -861908548
+    TransitionIndex: 1
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: -1268254700
+    TransitionDuration: 0.25
+    TriggerNameHash: 1110398559
+    TransitionIndex: 2
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: -1439726322
+    TransitionDuration: 0.25
+    TriggerNameHash: 2036517879
+    TransitionIndex: 3
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: 704867767
+    TransitionDuration: 0.25
+    TriggerNameHash: 1223319366
+    TransitionIndex: 4
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: -1974471027
+    TransitionDuration: 0.25
+    TriggerNameHash: 143067740
+    TransitionIndex: 5
+  m_Animator: {fileID: 368898256859980899}
 --- !u!114 &7947507000291783009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,63 +977,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   Speed: 5
---- !u!114 &8734124903862219748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6392133420162213027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  TransitionStateInfoList:
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: -98237950
-    TransitionDuration: 0.25
-    TriggerNameHash: 1080493112
-    TransitionIndex: 0
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: 762227118
-    TransitionDuration: 0.25
-    TriggerNameHash: -861908548
-    TransitionIndex: 1
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: -1268254700
-    TransitionDuration: 0.25
-    TriggerNameHash: 1110398559
-    TransitionIndex: 2
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: -1439726322
-    TransitionDuration: 0.25
-    TriggerNameHash: 2036517879
-    TransitionIndex: 3
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: 704867767
-    TransitionDuration: 0.25
-    TriggerNameHash: 1223319366
-    TransitionIndex: 4
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: -1974471027
-    TransitionDuration: 0.25
-    TriggerNameHash: 143067740
-    TransitionIndex: 5
-  m_Animator: {fileID: 368898256859980899}
 --- !u!82 &3174099458347862163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4786,7 +4786,7 @@ MonoBehaviour:
   randomHoldDurationMax: 0.5
   configReady: 0
   warnOnNullRefs: 1
-  inspSalsaLinked: 0
+  inspSalsaLinked: 1
   inspStateFoldoutProcessing: 0
   inspStateFoldoutSettings: 0
   inspStateFoldoutEmotes: 0
