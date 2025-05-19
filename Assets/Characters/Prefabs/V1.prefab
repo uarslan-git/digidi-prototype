@@ -772,9 +772,6 @@ PrefabInstance:
       addedObject: {fileID: 1923635773735558221}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8879105722122918410}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3174099458347862163}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
@@ -966,20 +963,6 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   Speed: 5
   cam: {fileID: 5166158649976757642}
---- !u!114 &8879105722122918410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6392133420162213027}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 455521db0066b4b4280c34d2fdba6763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  Speed: 5
 --- !u!82 &3174099458347862163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4825,7 +4808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28665e2e784194d49b47e527f7bbe770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 7437285019943958447, guid: a3977b9bec385114abc2df4a7ff348fc, type: 3}
+  playerSpawn: {fileID: 0}
+  questRigSpawn: {fileID: 0}
 --- !u!4 &7091104498697002103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5324192283071576699, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
