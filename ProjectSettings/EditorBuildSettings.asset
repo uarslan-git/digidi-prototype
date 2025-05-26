@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/HallwayScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/Widgets/Scenes/WidgetsQuickstart.unity
@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/NGO_Minimal_Setup/NGO_Setup.unity
     guid: 9ebf46e6652681d47909cd02198bdb56
+  - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 2dbc56a4ca96c5045801012c85536d94
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 949fb38144f84414d9d85d182652a919, type: 2}
