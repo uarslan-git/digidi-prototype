@@ -9,6 +9,8 @@ public class MultiplayerWidgetUIController : MonoBehaviour
 
     void Start()
     {
+        // Subscribe to Netcode events that signify a client or server session has started.
+        // When these events fire, the DisableUI method will be called.
         NetworkManager.Singleton.OnClientStarted += DisableUI;
         NetworkManager.Singleton.OnServerStarted += DisableUI;
         Debug.Log("MultiplayerWidgetUIController subscribed to Netcode events.");
@@ -16,6 +18,9 @@ public class MultiplayerWidgetUIController : MonoBehaviour
 
     void OnDestroy()
     {
+        // It's crucial to unsubscribe from events when the GameObject is destroyed
+        // to prevent memory leaks and null reference exceptions if NetworkManager.Singleton
+        // is destroyed before this script.
         if (NetworkManager.Singleton != null)
         {
             NetworkManager.Singleton.OnClientStarted -= DisableUI;
@@ -26,6 +31,7 @@ public class MultiplayerWidgetUIController : MonoBehaviour
 
     private void DisableUI()
     {
+        // Disable the main multiplayer widgets canvas if it's assigned.
         if (multiplayerWidgetsCanvas != null)
         {
             multiplayerWidgetsCanvas.enabled = false;
@@ -34,6 +40,20 @@ public class MultiplayerWidgetUIController : MonoBehaviour
         else
         {
             Debug.LogWarning("Multiplayer Widgets Canvas is not assigned in the Inspector! UI might not be disabled.");
+        }
+
+        // Now, look for and disable the XRI Spatial Keyboard(Clone)
+        // We use GameObject.Find because it might be instantiated at runtime.
+        GameObject xriSpatialKeyboard = GameObject.Find("XRI Spatial Keyboard(Clone)");
+
+        if (xriSpatialKeyboard != null)
+        {
+            xriSpatialKeyboard.SetActive(false); // Disable the GameObject
+            Debug.Log("XRI Spatial Keyboard(Clone) disabled.");
+        }
+        else
+        {
+            Debug.LogWarning("XRI Spatial Keyboard(Clone) not found in the scene. It might not be present or its name has changed.");
         }
     }
 }
