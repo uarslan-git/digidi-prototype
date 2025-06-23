@@ -1278,6 +1278,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b1564655ba0f7444082e32cdc0c5b0e9, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6172768193715428586, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1381,7 +1389,7 @@ PrefabInstance:
       addedObject: {fileID: -6096260735066746608}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -7750760864498704575}
+      addedObject: {fileID: -5456844596104810443}
   m_SourcePrefab: {fileID: 100100000, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
 --- !u!137 &134564129034339608 stripped
 SkinnedMeshRenderer:
@@ -1597,7 +1605,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.8587866
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -5385,7 +5393,7 @@ MonoBehaviour:
   randomHoldDurationMax: 0.5
   configReady: 0
   warnOnNullRefs: 1
-  inspSalsaLinked: 0
+  inspSalsaLinked: 1
   inspStateFoldoutProcessing: 0
   inspStateFoldoutSettings: 0
   inspStateFoldoutEmotes: 0
@@ -6239,7 +6247,7 @@ MonoBehaviour:
   OnLookAwayFromShyness:
     m_PersistentCalls:
       m_Calls: []
---- !u!143 &-7750760864498704575
+--- !u!143 &-5456844596104810443
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6257,13 +6265,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 1.75
+  m_Radius: 0.19
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 20, z: 0}
+  m_Center: {x: 0, y: 0.87, z: 0}
 --- !u!4 &7091104498697002103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5324192283071576699, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
