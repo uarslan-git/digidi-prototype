@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -54,7 +53,7 @@ public class ActionManager : NetworkBehaviour
 
         if (!string.IsNullOrEmpty(node.AnimationStateName) && Animator != null)
         {
-            Animator.SetTrigger(node.AnimationStateName);
+            Animator.CrossFade(node.AnimationStateName, 0.35f);  // Smooth transition over 0.25 seconds
         }
     }
 
@@ -89,11 +88,24 @@ public class ActionManager : NetworkBehaviour
         }
     }
 
-    [Rpc(SendTo.Everyone)]
-    private void PlayAudioRpc(int clipId)
+[Rpc(SendTo.Everyone)]
+private void PlayAudioRpc(int clipId)
+{
+    AudioSource.clip = ActionTreeBuilder.audioClips[clipId];
+    AudioSource.Play();
+    StartCoroutine(WaitForAudioEnd());
+}
+
+private IEnumerator WaitForAudioEnd()
+{
+    while (AudioSource.isPlaying)
     {
-        AudioSource.clip = ActionTreeBuilder.audioClips[clipId];
-        AudioSource.Play();
-        //print("test");
+        yield return null;
     }
+    // Reset to idle state after audio finishes with smooth transition
+    if (Animator != null)
+    {
+        Animator.CrossFade("Idle", 0.05f);  // Smooth transition over 0.25 seconds
+    }
+}
 }

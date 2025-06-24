@@ -15,10 +15,10 @@ public class ActionTreeBuilder : MonoBehaviour
 
         RootNode.AddChild(szene0Node);
 
-        var szene3aNode = new ActionNode("Szene 3a", 1, "Szene3aTrigger");
-        var szene3bNode = new ActionNode("Szene 3b", 2, "Szene3bTrigger");
-        var szene3cdNode = new ActionNode("Szene 3c_d", 3, "Szene3cdTrigger");
-        var szene3eNode = new ActionNode("Szene 3e", 4, "Szene3eTrigger");
+        var szene3aNode = new ActionNode("Reaktion erstaunt und höflich", 1, "Szene3aTrigger");
+        var szene3bNode = new ActionNode("Reaktion irritiert und Nachfrage", 2, "Szene3bTrigger");
+        var szene3cdNode = new ActionNode("Reaktion genervt und irritiert", 3, "Szene3cdTrigger");
+        var szene3eNode = new ActionNode("Reaktion höflich und Nachfrage", 4, "Szene3eTrigger");
 
         szene0Node.AddChild(szene3aNode);
         szene0Node.AddChild(szene3bNode);
