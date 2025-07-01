@@ -53,7 +53,7 @@ public class ActionManager : NetworkBehaviour
 
         if (!string.IsNullOrEmpty(node.AnimationStateName) && Animator != null)
         {
-            Animator.CrossFade(node.AnimationStateName, 0.35f);  // Smooth transition over 0.25 seconds
+            Animator.SetTrigger(node.AnimationStateName);
         }
     }
 

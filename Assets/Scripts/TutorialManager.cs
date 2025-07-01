@@ -5,6 +5,24 @@ using TMPro;
 
 public class TutorialManager : NetworkBehaviour
 {
+    // Allows manual triggering of the tutorial for Editor debugging
+    public void ShowTutorial()
+    {
+        Debug.Log("ShowTutorial() called");
+        InitializeTutorial();
+    }
+
+    // Editor-only: Press 'T' to show the tutorial in Play Mode
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if (UnityEngine.Input.GetKeyDown(KeyCode.T))
+        {
+            Debug.Log("[TutorialManager] 'T' pressed in Editor. Showing tutorial.");
+            ShowTutorial();
+        }
+    }
+#endif
     [Header("UI References")]
     [SerializeField] private Canvas tutorialCanvas;
     [SerializeField] private Button startButton;
@@ -20,24 +38,8 @@ public class TutorialManager : NetworkBehaviour
     {
         base.OnNetworkSpawn();
 
-        // Only show tutorial for the owner of this object
-        if (!IsOwner)
-        {
-            if (tutorialCanvas != null)
-                tutorialCanvas.enabled = false;
-            return;
-        }
-
-        // Only show tutorial for Quest/XR users
-        if (gameObject.name.Contains("XR Origin"))
-        {
-            InitializeTutorial();
-        }
-        else
-        {
-            if (tutorialCanvas != null)
-                tutorialCanvas.enabled = false;
-        }
+        // Always show tutorial for all users
+        InitializeTutorial();
     }
 
     private void InitializeTutorial()
@@ -45,14 +47,17 @@ public class TutorialManager : NetworkBehaviour
         if (tutorialCanvas != null)
         {
             tutorialCanvas.enabled = true;
+            Debug.Log("Tutorial Canvas enabled");
             
             if (tutorialText != null)
                 tutorialText.text = tutorialMessage;
+            
 
             if (startButton != null)
             {
                 startButton.onClick.AddListener(() => {
                     tutorialCanvas.enabled = false;
+                    Debug.Log("Tutorial dismissed by user");
                     // You can trigger any additional tutorial completion logic here
                 });
             }
