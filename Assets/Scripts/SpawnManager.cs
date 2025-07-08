@@ -15,10 +15,16 @@ public class PlayerSpecificSpawn : NetworkBehaviour
     {
         // Important: Only the client who owns this player object (or the server)
         // should execute the positioning logic.
+
         if (!IsOwner)
         {
             return;
         }
+
+        bool isQuest = Application.platform == RuntimePlatform.Android;
+        bool isPC = Application.platform == RuntimePlatform.WindowsPlayer ||
+                    Application.platform == RuntimePlatform.OSXPlayer ||
+                    Application.platform == RuntimePlatform.LinuxPlayer;
 
 
         GameObject questRigSpawnObj = GameObject.Find("QuestRigSpawnPoint");
@@ -41,7 +47,7 @@ public class PlayerSpecificSpawn : NetworkBehaviour
             Debug.LogWarning($"{gameObject.name}: 'PlayerSpawnPoint' GameObject not found in the scene. Please create an empty GameObject named 'PlayerSpawnPoint' and position it.");
         }
 
-        if (gameObject.name.Contains("XR Origin (XR Rig)")) 
+        if (isQuest || gameObject.name.Contains("XR Origin (XR Rig)"))
         {
             if (questRigSpawnPoint != null)
             {
@@ -52,7 +58,7 @@ public class PlayerSpecificSpawn : NetworkBehaviour
                 Debug.LogError($"{gameObject.name}: Quest Rig spawn point ('QuestRigSpawnPoint') was not found, cannot move. Check previous warnings.");
             }
         }
-        else if (gameObject.name.Contains("V1")) 
+        else if (isPC || gameObject.name.Contains("V1"))
         {
             if (playerSpawnPoint != null)
             {

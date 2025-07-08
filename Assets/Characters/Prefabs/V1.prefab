@@ -1777,6 +1777,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   NetworkTransformExpanded: 1
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
   AuthorityMode: 0
   TickSyncChildren: 0
   UseUnreliableDeltas: 0
@@ -5623,7 +5633,7 @@ MonoBehaviour:
   randomHoldDurationMax: 0.5
   configReady: 0
   warnOnNullRefs: 1
-  inspSalsaLinked: 0
+  inspSalsaLinked: 1
   inspStateFoldoutProcessing: 0
   inspStateFoldoutSettings: 0
   inspStateFoldoutEmotes: 0
@@ -6666,7 +6676,7 @@ MonoBehaviour:
   minLookTime: 3
   maxLookTime: 10
   thirdPersonPlayerEyeCenter: {fileID: 0}
-  keepTargetEvenWhenLost: 1
+  keepTargetEvenWhenLost: 0
   avoidLookingThroughPlayer: 0
   OnStartLookingAtPlayer:
     m_PersistentCalls:
