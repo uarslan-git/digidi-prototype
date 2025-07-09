@@ -8,7 +8,26 @@ using UnityEngine.UI;
    public class XROriginTutorialCanvas : NetworkBehaviour
    {
        public Canvas tutorialCanvas;
-       public Button confirmButton;
+
+       void Start()
+       {
+           bool isQuest = Application.platform == RuntimePlatform.Android;
+           if (tutorialCanvas != null)
+               tutorialCanvas.enabled = isQuest;
+       }
+
+       public void HideCanvas()
+       {
+           if (tutorialCanvas != null)
+           {
+               tutorialCanvas.enabled = false;
+               CanvasGroup cg = tutorialCanvas.GetComponent<CanvasGroup>();
+               if (cg == null)
+                   cg = tutorialCanvas.gameObject.AddComponent<CanvasGroup>();
+               cg.blocksRaycasts = false;
+               cg.interactable = false;
+           }
+       }
    
        private bool isLocalPlayer = false;
        private bool aButtonPrev = false;
@@ -26,21 +45,23 @@ using UnityEngine.UI;
                preJoinCamera.SetActive(false);
    
            bool isQuest = Application.platform == RuntimePlatform.Android;
-           if (isQuest || gameObject.name.Contains("XR Origin (XR Rig)"))
+
+           if (isQuest)
            {
                isLocalPlayer = true;
                if (tutorialCanvas != null)
                    tutorialCanvas.enabled = true;
-               canToggle = false; // Only allow toggling after Confirm
+               canToggle = true;
            }
            else
            {
+               isLocalPlayer = false;
                if (tutorialCanvas != null)
                    tutorialCanvas.enabled = false;
+               canToggle = false;
            }
    
-           if (confirmButton != null)
-               confirmButton.onClick.AddListener(OnConfirmClicked);
+           // Assign the button event via Inspector
        }
    
        void Update()
@@ -59,10 +80,9 @@ using UnityEngine.UI;
            }
        }
    
-       void OnConfirmClicked()
+       public void OnConfirmClicked()
        {
-           if (tutorialCanvas != null)
-               tutorialCanvas.enabled = false;
-           canToggle = true;
+           if (tutorialCanvas != null && canToggle)
+               tutorialCanvas.enabled = !tutorialCanvas.enabled;
        }
    }
