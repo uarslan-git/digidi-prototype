@@ -1619,7 +1619,7 @@ PrefabInstance:
       addedObject: {fileID: -5456844596104810443}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5272739417855287287}
+      addedObject: {fileID: -4581744766142952122}
   m_SourcePrefab: {fileID: 100100000, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}
 --- !u!137 &134564129034339608 stripped
 SkinnedMeshRenderer:
@@ -1777,6 +1777,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   NetworkTransformExpanded: 1
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
   AuthorityMode: 0
   TickSyncChildren: 0
   UseUnreliableDeltas: 0
@@ -5623,7 +5633,7 @@ MonoBehaviour:
   randomHoldDurationMax: 0.5
   configReady: 0
   warnOnNullRefs: 1
-  inspSalsaLinked: 0
+  inspSalsaLinked: 1
   inspStateFoldoutProcessing: 0
   inspStateFoldoutSettings: 0
   inspStateFoldoutEmotes: 0
@@ -6708,25 +6718,19 @@ CharacterController:
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.87, z: 0}
---- !u!114 &5272739417855287287
+--- !u!114 &-4581744766142952122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6392133420162213027}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3125cda8205d7b6af432fde4477eab, type: 3}
+  m_Script: {fileID: 11500000, guid: 28665e2e784194d49b47e527f7bbe770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  tutorialCanvas: {fileID: 0}
-  startButton: {fileID: 0}
-  tutorialText: {fileID: 0}
-  tutorialMessage: "Welcome to VR! \n\n- Use your right controller's trigger to interact
-    with objects\n- Use your left controller's stick to move around\n- Press the
-    start button below when you're ready!"
 --- !u!4 &7091104498697002103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5324192283071576699, guid: 70d06c5bff4bacf4c9a48249f95a8518, type: 3}

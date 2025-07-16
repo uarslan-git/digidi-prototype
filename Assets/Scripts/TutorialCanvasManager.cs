@@ -1,17 +1,18 @@
 using UnityEngine;
 using UnityEngine.XR;
-using UnityEngine.InputSystem.XR; // Required for OpenXR
+using UnityEngine.InputSystem.XR;
 
 public class TutorialCanvasManager : MonoBehaviour
 {
     public Canvas tutorialCanvas;
     private InputDevice rightController;
     private bool isQuest;
+    private bool previousButtonState = false;
 
     void Start()
     {
-        isQuest = Application.platform == RuntimePlatform.Android;
-        tutorialCanvas.enabled = isQuest;
+        isQuest = Application.platform == RuntimePlatform.Android && this.gameObject.name == "Cameraa";
+        tutorialCanvas.enabled = isQuest; // Start with it disabled
 
         // Initialize the right controller
         rightController = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
@@ -19,17 +20,23 @@ public class TutorialCanvasManager : MonoBehaviour
 
     void Update()
     {
-        // Check if the right controller is valid
+        // Reacquire the controller if it's not valid
         if (!rightController.isValid)
         {
             rightController = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
             return;
         }
 
-        // Check for A button press (PrimaryButton in OpenXR)
-        if (rightController.TryGetFeatureValue(CommonUsages.primaryButton, out bool isPressed) && isPressed)
+        // Read the primary button (A on Quest)
+        if (rightController.TryGetFeatureValue(CommonUsages.primaryButton, out bool isPressed))
         {
-            ToggleCanvas();
+            // Detect rising edge: button just pressed this frame
+            if (isPressed && !previousButtonState)
+            {
+                ToggleCanvas();
+            }
+
+            previousButtonState = isPressed;
         }
     }
 
@@ -38,3 +45,4 @@ public class TutorialCanvasManager : MonoBehaviour
         tutorialCanvas.enabled = !tutorialCanvas.enabled;
     }
 }
+

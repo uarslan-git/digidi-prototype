@@ -106,15 +106,15 @@ MonoBehaviour:
     - line: '|   use32BitDisplayBuffer: 1'
     - line: '|   preserveFramebufferAlpha: 0'
     - line: '|   disableDepthAndStencilBuffers: 0'
-    - line: '|   androidStartInFullscreen: 1'
-    - line: '|   androidRenderOutsideSafeArea: 1'
+    - line: '|   androidStartInFullscreen: 0'
+    - line: '|   androidRenderOutsideSafeArea: 0'
     - line: '|   androidUseSwappy: 0'
     - line: '|   androidBlitType: 0'
     - line: '|   androidResizeableActivity: 1'
     - line: '|   androidDefaultWindowWidth: 1920'
     - line: '|   androidDefaultWindowHeight: 1080'
-    - line: '|   androidMinimumWindowWidth: 400'
-    - line: '|   androidMinimumWindowHeight: 300'
+    - line: '|   androidMinimumWindowWidth: 0'
+    - line: '|   androidMinimumWindowHeight: 0'
     - line: '|   androidFullscreenMode: 1'
     - line: '|   androidAutoRotationBehavior: 1'
     - line: '|   androidPredictiveBackSupport: 0'
@@ -1000,7 +1000,7 @@ MonoBehaviour:
         m_ExplicitNullChecks: 0
         m_ExplicitDivideByZeroChecks: 0
         m_ExplicitArrayBoundsChecks: 0
-        m_CompressionType: 2
+        m_CompressionType: 0
         m_InstallInBuildFolder: 0
         m_BuildSubtarget: 0
         m_BuildSystem: 1
