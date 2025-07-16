@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.interaction": "77.0.0",
     "com.soupday.cc3_unity_tools": "file:../DownloadedPackages/CCiC-Unity-Tools-2.0.0",
     "com.unity.ai.navigation": "2.0.8",
     "com.unity.collab-proxy": "2.8.2",
