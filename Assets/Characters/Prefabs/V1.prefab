@@ -6676,7 +6676,7 @@ MonoBehaviour:
   minLookTime: 3
   maxLookTime: 10
   thirdPersonPlayerEyeCenter: {fileID: 0}
-  keepTargetEvenWhenLost: 1
+  keepTargetEvenWhenLost: 0
   avoidLookingThroughPlayer: 0
   OnStartLookingAtPlayer:
     m_PersistentCalls:
