@@ -761,8 +761,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4832696547035357655}
+  m_Children: []
   m_Father: {fileID: 1389299333414211754}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5462527499567396724
@@ -1446,12 +1445,13 @@ Transform:
   m_GameObject: {fileID: 7907813881072662484}
   serializedVersion: 2
   m_LocalRotation: {x: -0.015308986, y: -0.0069035497, z: -0.000046323108, w: -0.999859}
-  m_LocalPosition: {x: 0.08259444, y: -0.34907675, z: -1.1398398}
+  m_LocalPosition: {x: 0, y: 0, z: -1.1398398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1389299333414211754}
   - {fileID: 6269888351204671797}
+  - {fileID: 4832696547035357655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1152499591535887865
@@ -1798,18 +1798,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8503233857887415809}
-  m_LocalRotation: {x: 0.015305973, y: 0.00000093434767, z: -0.0000610375, w: 0.9998829}
+  m_LocalRotation: {x: 0.015305974, y: 0.0000009345822, z: -0.000061037485, w: 0.9998829}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 0.0020000003, y: 0.002, z: 0.0020000003}
+  m_LocalScale: {x: 0.0020000003, y: 0.0019999999, z: 0.0020000003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3444735875188276159}
   - {fileID: 6482727473312893806}
-  m_Father: {fileID: 3739413381741495422}
+  m_Father: {fileID: 314504549006708805}
   m_LocalEulerAnglesHint: {x: 1.754, y: 0, z: -0.007}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1.164}
   m_SizeDelta: {x: 1312.7, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6577062452849431099
@@ -2042,19 +2042,20 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Sie sind Mieter:in in einem Mehrfamilienhaus.\nSie sind k\xFCrzlich eingezogen
-    und Sie freuen sich \xFCber Ihre sch\xF6ne neue Wohnung. \nIhnen f\xE4llt seit
-    Ihrem Einzug der schmutzige Hausflur auf. \nSie bezahlen aber f\xFCr die Reinigung
-    des Hausflurs. Das steht so im Mietvertrag. \nSie f\xFChlen sich aus diesem Grund
-    ungerecht behandelt. \nSie treffen die Vermieterin zuf\xE4llig im Hausflur. \n\nSie
-    m\xF6chten das Thema \u201Eschmutziger Hausflur\u201C ansprechen. \nSie m\xF6chten,
-    dass der Vermieter etwas unternimmt, um die Situation zu verbessern. "
+    m_LineSpacing: 1.5
+  m_Text: "<b>Sie sind Mieter:in</b> in einem Mehrfamilienhaus.\nSie sind k\xFCrzlich
+    eingezogen und Sie freuen sich \xFCber Ihre sch\xF6ne neue Wohnung. \nIhnen f\xE4llt
+    seit Ihrem Einzug der <b>schmutzige Hausflur</b>auf. \nSie <b>bezahlen </b>aber
+    f\xFCr die <b>Reinigung </b>des Hausflurs. Das steht so im Mietvertrag. \nSie
+    f\xFChlen sich aus diesem Grund <b>ungerecht </b>behandelt. \nSie <b>treffen
+    die Vermieterin </b>zuf\xE4llig im Hausflur. \n\nSie m\xF6chten <b>das Thema
+    \u201Eschmutziger Hausflur\u201C ansprechen</b>. \n<b>Sie m\xF6chten, dass der
+    Vermieter etwas unternimmt, um die Situation zu verbessern. </b>"
 --- !u!1 &8943652448952828258
 GameObject:
   m_ObjectHideFlags: 0
