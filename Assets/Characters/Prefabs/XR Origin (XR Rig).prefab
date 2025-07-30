@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7417667278313645129
 Transform:
   m_ObjectHideFlags: 0
@@ -454,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4064190999384506781
 Transform:
   m_ObjectHideFlags: 0
@@ -987,7 +987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4148486101100920000
 Transform:
   m_ObjectHideFlags: 0
@@ -1799,7 +1799,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8503233857887415809}
   m_LocalRotation: {x: 0.015305974, y: 0.0000009345822, z: -0.000061037485, w: 0.9998829}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
   m_LocalScale: {x: 0.0020000003, y: 0.0019999999, z: 0.0020000003}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2050,12 +2050,12 @@ MonoBehaviour:
     m_LineSpacing: 1.5
   m_Text: "<b>Sie sind Mieter:in</b> in einem Mehrfamilienhaus.\nSie sind k\xFCrzlich
     eingezogen und Sie freuen sich \xFCber Ihre sch\xF6ne neue Wohnung. \nIhnen f\xE4llt
-    seit Ihrem Einzug der <b>schmutzige Hausflur</b>auf. \nSie <b>bezahlen </b>aber
+    seit Ihrem Einzug der <b>schmutzige Hausflur</b> auf. \nSie <b>bezahlen </b>aber
     f\xFCr die <b>Reinigung </b>des Hausflurs. Das steht so im Mietvertrag. \nSie
     f\xFChlen sich aus diesem Grund <b>ungerecht </b>behandelt. \nSie <b>treffen
     die Vermieterin </b>zuf\xE4llig im Hausflur. \n\nSie m\xF6chten <b>das Thema
-    \u201Eschmutziger Hausflur\u201C ansprechen</b>. \n<b>Sie m\xF6chten, dass der
-    Vermieter etwas unternimmt, um die Situation zu verbessern. </b>"
+    \u201Eschmutziger Hausflur\u201C ansprechen</b>. \n<b>Sie m\xF6chten, dass die
+    Vermieterin etwas unternimmt, um die Situation zu verbessern. </b>"
 --- !u!1 &8943652448952828258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,7 +2106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8460581890281047367
 Transform:
   m_ObjectHideFlags: 0
@@ -2348,6 +2348,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8460581890281047367}
     m_Modifications:
+    - target: {fileID: 1722882099693224055, guid: 3df3e1220f2164f448701a6de8084f92, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4804964734930210078, guid: 3df3e1220f2164f448701a6de8084f92, type: 3}
       propertyPath: m_Name
       value: Near-Far Interactor
@@ -2660,7 +2664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3055433562365713971, guid: b84cd05e1160fe34cab2585022c8cd99, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6766910295942714439, guid: b84cd05e1160fe34cab2585022c8cd99, type: 3}
       propertyPath: m_AttachTransform
@@ -3174,6 +3178,10 @@ PrefabInstance:
     - target: {fileID: 4125421792874400280, guid: 27024f5809f4a4347b9cd7f26a1bdf93, type: 3}
       propertyPath: m_Name
       value: Poke Interactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125421792874400280, guid: 27024f5809f4a4347b9cd7f26a1bdf93, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8259524632637961923, guid: 27024f5809f4a4347b9cd7f26a1bdf93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
